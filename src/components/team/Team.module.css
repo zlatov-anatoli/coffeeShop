@@ -1,0 +1,68 @@
+.teamGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+.title {
+  text-align: center;
+  font-size: var(--big-font-size);
+  margin-bottom: 1rem;
+}
+
+.title::before {
+  content: attr(data-title);
+  display: block;
+  color: var(--first-color);
+  font-family: var(--second-font);
+  font-size: var(--h2-font-size);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+.item {
+  border-bottom: 3px solid var(--first-color);
+  background-color: var(--container-color);
+  padding: 0.5rem;
+  transition: 0.5s var(--transition);
+  position: relative;
+}
+
+.data {
+  text-align: center;
+  padding: 0.75;
+}
+
+.teamTitle {
+  font-size: var(--largest-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.job {
+  color: var(--first-color);
+  font-weight: var(--weight-500);
+}
+
+.socials {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.item:hover {
+  transform: translateY(-0.5rem);
+}
+
+.link {
+  background-color: var(--bg-color);
+  color: var(--title-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.3s var(--transition);
+}
+
+.link:hover {
+  background-color: var(--first-color);
+}

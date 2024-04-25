@@ -1,0 +1,103 @@
+.wrapper {
+    padding: 15px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 45.62% 25.57% 17.05% 11.76%;
+    gap: 0.75rem; /* Расстояние между блоками */
+    padding: 1.25rem; /* Внутренние отступы */
+    border-radius: var(--radius); /* Скругление углов, значение переменной должно быть задано где-то в CSS */
+    transition: 0.4s var(--transition); /* Плавная анимация, переменная для transition должна быть определена */
+    align-items: center; /* Центрирование содержимого по вертикали */
+}
+
+.item:hover {
+    transform: translateY(-0.7rem);
+    background-color: hsl(0, 0%, 20%);
+}
+
+.img {
+    padding: 3px;
+    border: 2px dashed var(--first-color);
+    width: 80px;
+    height: 80px;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.subtitle,
+.price {
+    color: var(--first-color);
+}
+
+.subtitle {
+    font-size: var(--large-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.price {
+    border-left: 2px dashed var(--first-color);
+    padding-left: 1.5rem;
+    font-size: var(--larger-font-size);
+    font-weight: var(--weight-600);
+}
+
+.circle {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: hsl(27, 34%, 59%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle:hover {
+    background-color: hsl(27, 34%, 39%);
+}
+
+.deleteItem {
+    fill: white;
+}
+
+.iconButton:hover {
+    background-color: grey;
+}
+
+.btnColor {
+    color: white
+}
+
+
+.basket {
+    position: fixed;
+    background-color: black;
+    z-index: 1000;
+    animation: slide-down 0.7s;
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}

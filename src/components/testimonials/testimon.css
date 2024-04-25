@@ -1,0 +1,56 @@
+.testimon__quote {
+  background-color: var(--container-color);
+  padding: 2.5rem 2rem 3rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.testimon__icon {
+  position: absolute;
+  bottom: -1.75rem;
+  left: 2.5rem;
+  color: var(--container-color);
+  font-size: var(--big-font-size);
+}
+
+.testimon__content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.25rem;
+}
+
+.testimon__img-wrapper {
+  border: 2px dashed var(--first-color);
+  padding: 0.25rem;
+  width: 80px;
+  height: 80px;
+  margin-inline: 1.25rem;
+}
+
+.testimon__img-wrapper,
+.testimon__img {
+  border-radius: 50%;
+}
+
+.testimon__title {
+  font-size: var(--larger-font-size);
+}
+.testimon__rating {
+  display: flex;
+  column-gap: 0.25rem;
+  color: var(--first-color);
+  margin-top: 0.25rem;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: white;
+}

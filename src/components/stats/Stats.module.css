@@ -1,0 +1,36 @@
+.image {
+  width: 60px;
+}
+
+.stats {
+  background: var(--container-color);
+}
+.statsGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  text-align: center;
+}
+
+.no {
+  color: var(--title-color);
+  font-size: var(--bigger-font-size);
+  font-weight: var(--weight-600);
+  margin-block: 1rem 0.75rem;
+}
+
+.title {
+  color: var(--first-color);
+  font-size: var(--larger-font-size);
+}
+
+.wrapper {
+  width: 100px;
+  height: 100px;
+  background-color: var(--first-color);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-inline: auto;
+}

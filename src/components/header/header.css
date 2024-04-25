@@ -1,0 +1,115 @@
+.header {
+    width: 100%;
+}
+
+.nav__logo {
+    width: 190px;
+}
+
+li a {
+    color: white; /* Базовый цвет текста */
+    text-decoration: none; /* Убирает подчёркивание ссылок */
+    transition: color 0.3s; /* Плавное изменение цвета */
+}
+
+li a:hover {
+    color: #87CEEB; /* Цвет при наведении - светло-голубой */
+}
+
+nav li a.active {
+    color: #FF6347;
+}
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+}
+
+.nav__logo {
+    width: 190px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.nav__link,
+.nav__toggle {
+    color: var(--title-color);
+}
+
+.active {
+    color: gold;
+    border-radius: 50%;
+    background-color: #282828;
+    box-shadow: 0 0 0 10px #282828;
+}
+
+.nav__link {
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-500);
+}
+
+.nav__toggle {
+    font-size: var(--h2-font-size);
+    display: none;
+}
+
+.scroll-header {
+    position: fixed;
+    background-color: var(--container-color);
+    z-index: 1000;
+    animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.vertical-line {
+    border-left: 1px solid white;
+    height: 10px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: hsl(27, 34%, 59%);
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: white;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.basket:hover {
+    background-color: hsl(27, 25%, 79%)
+}
+
+.empty-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Занимает всю высоту видимой части экрана */
+    text-align: center;
+    color: #555; /* Серый цвет текста */
+}
+
+.empty-basket-text {
+    font-size: 24px; /* Большой размер текста для лучшей видимости */
+    margin-top: 20px; /* Отступ от иконки */
+}

@@ -1,0 +1,52 @@
+.featuresGrid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: var(--radius);
+  position: relative;
+  transition: 0.4s var(--transition);
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  inset: 0.75rem;
+  border: 2px solid var(--first-color);
+  opacity: 0.2;
+  border-radius: inherit;
+}
+
+.item:hover {
+  transform: translateY(-0.7rem);
+}
+
+.title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.title::before {
+  content: attr(data-title);
+  display: block;
+  color: var(--first-color);
+  font-family: var(--second-font);
+  font-size: var(--h2-font-size);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  width: 60px;
+  margin-bottom: 1.25rem;
+}
+
+.shape {
+  position: absolute;
+  width: 120px;
+  right: 1.25rem;
+  top: 3rem;
+  opacity: 0.2;
+}
